@@ -635,7 +635,7 @@ years = np.arange(1982, 2021, 1)
 f1 = f1.rio.set_spatial_dims(x_dim="lon", y_dim="lat")
 f2 = f2.rio.set_spatial_dims(x_dim="lon", y_dim="lat")
 # 加载 shp 文件
-shp_file = 'D:/风和植被/代码专用/quhua/vegzone_alb54.shp'
+shp_file = 'path/vegzone_alb54.shp'
 gdf = gpd.read_file(shp_file)
 gdf['region_group'] = gdf['daima'].str[0]
 # unique_region_groups = gdf['region_group'].unique()
@@ -766,7 +766,7 @@ lon=f1.lon
 years = np.arange(1982, 2021, 1)
 f1 = f1.rio.set_spatial_dims(x_dim="lon", y_dim="lat")
 
-shp_file = 'D:/风和植被/代码专用/quhua/vegzone_alb54.shp'
+shp_file = 'path/vegzone_alb54.shp'
 gdf = gpd.read_file(shp_file)
 gdf['region_group'] = gdf['daima'].str[0]
 # unique_region_groups = gdf['region_group'].unique()
@@ -849,9 +849,9 @@ merged = pd.DataFrame({
     'P_value1': p_value1
 })
 
-merged_wind.to_csv('D:/风和植被/代码专用/风速分区数据.txt', sep=' ',header=0, index=0)
+merged_wind.to_csv('path/windzone.txt', sep=' ',header=0, index=0)
 
-merged.to_csv('D:/风和植被/代码专用/LAI分区数据.txt', sep=' ',header=0, index=0)
+merged.to_csv('path/LAIzone.txt', sep=' ',header=0, index=0)
 # In[]  Fig.3a
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -888,7 +888,7 @@ color_map = {
 
 
 
-shp_file = 'D:/风和植被/代码专用/quhua/vegzone_alb54.shp'
+shp_file = 'path/vegzone_alb54.shp'
 gdf = gpd.read_file(shp_file)
 
 
@@ -917,10 +917,10 @@ gdf_merged = gdf.dissolve(by='names', as_index=False)
 bbox = box(70, 15, 140, 55)  
 bbox_gdf = gpd.GeoDataFrame(geometry=[bbox], crs=gdf.crs) 
 gdf = gpd.clip(gdf_merged, bbox_gdf)
-data_wind=pd.read_csv('D:/风和植被/代码专用/风速分区数据.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
+data_wind=pd.read_csv('path/windzone.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
                       names=['names','beforeTP','beforeTP_percent','afterTP','afterTP_percent','p_value','p_value1'])
 
-data_LAI=pd.read_csv('D:/风和植被/代码专用/LAI分区数据.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
+data_LAI=pd.read_csv('path/LAIzone.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
                      names=['names','beforeTP','beforeTP_percent','afterTP','afterTP_percent','p_value','p_value1'])
 
 x_before = data_wind['beforeTP']
@@ -1034,10 +1034,10 @@ color_map = {
     'Temperate Desert': '#D7CCC8',  
     'Qinghai-Tibet Plateau Alpine Vegetation': '#B0BEC5'  
 }
-data_wind=pd.read_csv('D:/风和植被/代码专用/风速分区数据.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
+data_wind=pd.read_csv('path/windzone.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
                       names=['names','beforeTP','beforeTP_percent','afterTP','afterTP_percent','p_value','p_value1'])
 
-data_LAI=pd.read_csv('D:/风和植被/代码专用/LAI分区数据.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
+data_LAI=pd.read_csv('path/LAIzone.txt',header=None,sep='\s+',usecols=[0,1,2,3,4,5,6],
                      names=['names','beforeTP','beforeTP_percent','afterTP','afterTP_percent','p_value','p_value1'])
 order = [
     'Tropical Monsoon Forest',
