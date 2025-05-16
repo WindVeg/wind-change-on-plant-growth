@@ -63,6 +63,8 @@ After install relaimpo in R and conda install rpy2, you can import rpy2 in Spyde
 The packages install in conda and R should finish in a few minutes.
 
 # Demo
+The LAI data can download from: https://doi.org/10.5281/zenodo.7649107
+The wind data need permission to download from: https://zenodo.org/records/5624401
 The "LAIdataproduce.py" and "WINDdataproduce.py"  contain the preprocessing of the raw data, while "Fig1~Fig4.py" include data processing and visualization for the figures in the paper.
 
 
