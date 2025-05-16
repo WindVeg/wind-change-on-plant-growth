@@ -73,6 +73,10 @@ install relaimpo in R:
 ```
 install.packages("relaimpo")
 ```
+install relaimpo in conda:
+```
+pip install rpy2
+```
 After install relaimpo in R and conda install rpy2, you can import rpy2 in Spyder.
 The packages install in conda and R should finish in a few minutes.
 # Package tests
