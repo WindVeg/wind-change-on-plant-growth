@@ -6,6 +6,7 @@ codes for "Decadal Wind Speed Recovery Amplifies Vegetation Growth"
 - [Installation Guide](#installation-guide)
 - [Package Tests](#package-tests)
 - [Demo](#demo)
+- [Data Verification](#data-verification)
 
 
 # System Requirements
@@ -84,3 +85,13 @@ The contents of the "quhua.zip" are the divisions of different vegetation zones 
 The "eleven.zip" contains the administrative divisions of China, which is used for **def china_map_feature()** in codes.
 
 After completing the previous steps, Figures 1 through 4 should be visualized in Spyder within a few seconds.
+
+
+# Data Verification
+You can verification the LAI dealing process by visualization of 'G:/CN05.1/month/0.25_month_onlychina.nc' in LAI data process.
+
+
+
+
+
+
