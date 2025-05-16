@@ -80,7 +80,7 @@ PS: the path in code: ('G:/CN05.1/month/CN05.1_Win_1982_2020_yearly_025x025.nc')
 
 LAI data used in the code should run LAIdataproduce.py first.
 
-The contents of the "quhua.zip" are the divisions of different vegetation zones in China, used for the data analysis in Fig. 3, which should replace the path **shp_file = 'D:/风和植被/代码专用/quhua/vegzone_alb54.shp**
+The contents of the "quhua.zip" are the divisions of different vegetation zones in China, used for the data analysis in Fig. 3, which should replace the path **shp_file = 'path/vegzone_alb54.shp**
 
 The "eleven.zip" contains the administrative divisions of China, which is used for **def china_map_feature()** in codes.
 
