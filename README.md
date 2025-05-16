@@ -65,6 +65,10 @@ pip install packages will cost about few minutes.
 For fig 4, you also need to download R software, here we use: R version 4.4.2 (2024-10-31 ucrt) -- "Pile of Leaves"
 Copyright (C) 2024 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64
+download R studio: 
+```
+https://cran.r-project.org/
+```
 install relaimpo in R:
 ```
 install.packages("relaimpo")
