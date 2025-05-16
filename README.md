@@ -33,7 +33,7 @@ This project was developed using:
 The codes should be compatible with Windows, Mac, and Linux operating systems.
 
 # Installation Guide
-First, download anaconda or miniconda
+First, download miniconda
 
 ```
 https://www.anaconda.com/download
@@ -47,13 +47,21 @@ conda create -n myenv python=3.11
 We use python version = 3.11.9, when create the new environment, the version should be more than 3.9.
 You can use whatever Python IDE you like, here we use spyder:
 ```
+conda activate myenv
+```
+```
 conda install spyder
+```
+```
+spyder
 ```
 ### Package Installation
 Then make sure the following Python libraries are installed: numpy, pandas, xarray, matplotlib, pwlf, cartopy，rpy2, geopandas, salem, R package relaimpo. You can use the following order:
 ```
-pip install numpy pandas xarray matplotlib pwlf cartopy geopandas salem rpy2
+pip install numpy pandas xarray matplotlib pwlf cartopy geopandas salem rioxarray
 ```
+pip install packages will cost about few minutes.
+
 For fig 4, you also need to download R software, here we use: R version 4.4.2 (2024-10-31 ucrt) -- "Pile of Leaves"
 Copyright (C) 2024 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64
