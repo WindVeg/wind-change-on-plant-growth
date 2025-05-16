@@ -8,9 +8,7 @@ import pwlf
 
 
 
-f=xr.open_dataset('G:/CN05.1/month/CN05.1_Win_1961_2022_monthly_025x025.nc')
-f= f.sel(time=slice('1982', '2020'))
-f=f.resample(time='1YE').mean()
+f=xr.open_dataset('G:/CN05.1/month/CN05.1_Win_1982_2020_yearly_025x025.nc') 
 f = f.rio.write_crs("EPSG:4326")
 
 f1=xr.open_dataset('G:/CN05.1/month/month_onlychina.nc')
@@ -137,7 +135,7 @@ import cartopy.mpl.ticker as cticker
 import cartopy.io.shapereader as shpreader
 from matplotlib.colors import TwoSlopeNorm
 
-f = xr.open_dataset('G:/CN05.1/month/CN05.1_Win_1961_2022_monthly_025x025.nc')
+f=xr.open_dataset('G:/CN05.1/month/CN05.1_Win_1982_2020_yearly_025x025.nc') 
 f1=f.win
 f1 = f1.resample(time='1YE').mean()
 f1= f1.sel(time=slice('1982', '2020'))
@@ -613,7 +611,7 @@ def china_map_feature():
                                       ccrs.PlateCarree(),edgecolor='k',facecolor='none')
     return provinces,nine_lines
 
-f = xr.open_dataset('G:/CN05.1/month/CN05.1_Win_1961_2022_monthly_025x025.nc')
+f=xr.open_dataset('G:/CN05.1/month/CN05.1_Win_1982_2020_yearly_025x025.nc') 
 f1=f.win
 f1 = f1.resample(time='1YE').mean()
 f1= f1.sel(time=slice('1982', '2020'))
