@@ -2,9 +2,10 @@
 codes for "Decadal Wind Speed Recovery Amplifies Vegetation Growth"
 
 ## Contents
-
-
-# Repo Contents
+- [System Requirements](#system-requirements)
+- [Installation Guide](#installation-guide)
+- [Package Tests](#package-tests)
+- [Demo](#demo)
 
 
 # System Requirements
@@ -61,14 +62,25 @@ install.packages("relaimpo")
 ```
 After install relaimpo in R and conda install rpy2, you can import rpy2 in Spyder.
 The packages install in conda and R should finish in a few minutes.
+# Package tests
+Run test.py
+
 
 # Demo
+Run Fig1~Fig4.py cells one by one, and the path should be replaced by requirements.
+
 The LAI data can download from: https://doi.org/10.5281/zenodo.7649107
+
 The wind data need permission to download from: https://zenodo.org/records/5624401
+
 The "LAIdataproduce.py" and "WINDdataproduce.py"  contain the preprocessing of the raw data, while "Fig1~Fig4.py" include data processing and visualization for the figures in the paper.
 
+PS: the path in code: ('G:/CN05.1/month/CN05.1_Win_1982_2020_yearly_025x025.nc') should replaced by the nc file in wind year data. 
 
-The contents of the "quhua.zip" are the divisions of different vegetation zones in China, used for the data analysis in Fig. 3.
+LAI data used in the code should run LAIdataproduce.py first.
 
-The "eleven.zip" contains the administrative divisions of China.
+The contents of the "quhua.zip" are the divisions of different vegetation zones in China, used for the data analysis in Fig. 3, which should replace the path **shp_file = 'D:/风和植被/代码专用/quhua/vegzone_alb54.shp**
 
+The "eleven.zip" contains the administrative divisions of China, which is used for **def china_map_feature()** in codes.
+
+After completing the previous steps, Figures 1 through 4 should be visualized in Spyder within a few seconds.
