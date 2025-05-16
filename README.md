@@ -1,12 +1,72 @@
-# codes
+# Decadal Wind Speed Recovery Amplifies Vegetation Growth
 codes for "Decadal Wind Speed Recovery Amplifies Vegetation Growth"
 
-This script is developed for Python 3.11
-Before running the script, make sure the following Python libraries are installed:
-numpy, pandas, xarray, matplotlib, pwlf, cartopy，rpy2, geopandas, salem, R package relaimpo
+## Contents
+
+
+# Repo Contents
+
+
+# System Requirements
+## Hardware Requirements
+The environment requires only a standard computer with enough RAM to support the operations defined by a user. We use a computer with the following specs:
+
+RAM: 16+ GB  
+CPU: Intel® Core™ i7-10750H @ 2.60GHz, 6 cores / 12 threads
+
+## Software Requirements
+
+### OS Requirements
+
+This project was developed using:
+
+-Python 3.11.9 (via conda-forge)
+
+-IPython 8.24.0
+
+-OS: Windows 10/11 64-bit  |  Version 22H2 
+
+-Architecture: AMD64
+
+The codes should be compatible with Windows, Mac, and Linux operating systems.
+
+# Installation Guide
+First, download anaconda or miniconda
+
+```
+https://www.anaconda.com/download
+```
+which should install in a few minutes.
+After finish downloading, open Anaconda Powershell Prompt or  Anaconda Prompt.
+Then create a new environment:
+```
+conda create -n myenv python=3.11
+```
+We use python version = 3.11.9, when create the new environment, the version should be more than 3.9.
+You can use whatever Python IDE you like, here we use spyder:
+```
+conda install spyder
+```
+### Package Installation
+Then make sure the following Python libraries are installed: numpy, pandas, xarray, matplotlib, pwlf, cartopy，rpy2, geopandas, salem, R package relaimpo. You can use the following order:
+```
+pip install numpy pandas xarray matplotlib pwlf cartopy geopandas salem rpy2
+```
+For fig 4, you also need to download R software, here we use: R version 4.4.2 (2024-10-31 ucrt) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64
+install relaimpo in R:
+```
+install.packages("relaimpo")
+```
+After install relaimpo in R and conda install rpy2, you can import rpy2 in Spyder.
+The packages install in conda and R should finish in a few minutes.
+
+# Demo
+The "LAIdataproduce.py" and "WINDdataproduce.py"  contain the preprocessing of the raw data, while "Fig1~Fig4.py" include data processing and visualization for the figures in the paper.
+
 
 The contents of the "quhua.zip" are the divisions of different vegetation zones in China, used for the data analysis in Fig. 3.
 
 The "eleven.zip" contains the administrative divisions of China.
 
-The "LAIdataproduce.py" and "WINDdataproduce.py"  contain the preprocessing of the raw data, while "Fig1~Fig4.py" include data processing and visualization for the figures in the paper.
