@@ -392,7 +392,7 @@ import cartopy.feature as cfeature
 import cartopy.mpl.ticker as cticker
 import cartopy.io.shapereader as shpreader
 # from matplotlib.colors import TwoSlopeNorm
-import statsmodels.api as sm
+
 import matplotlib as mpl
 from matplotlib.colors import LinearSegmentedColormap
 
