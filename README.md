@@ -100,7 +100,7 @@ import rpy2.robjects as robjects
 import rioxarray
 import pytz
 ```
-if successfully run, then the packages are downloaded.
+if successfully run, then the packages are successfully downloaded.
 
 # Demo
 1. Finish Installation Guide and  Package tests
