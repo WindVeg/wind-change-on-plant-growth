@@ -55,17 +55,19 @@ conda install spyder
 ```
 spyder
 ```
+Then spyder should be open.
+
 ### Package Installation
-Then make sure the following Python libraries are installed: numpy, pandas, xarray, matplotlib, pwlf, cartopy，rpy2, geopandas, salem, R package relaimpo. You can use the following order:
+Then make sure the following Python libraries are installed: numpy, pandas, xarray, matplotlib, pwlf, cartopy，rpy2, geopandas, salem, R package relaimpo. You can use the following order in your conda environment:
 ```
-pip install numpy pandas xarray matplotlib pwlf cartopy geopandas salem rioxarray
+pip install numpy pandas xarray matplotlib pwlf cartopy geopandas salem rioxarray pytz
 ```
 pip install packages will cost about few minutes.
 
 For fig 4, you also need to download R software, here we use: R version 4.4.2 (2024-10-31 ucrt) -- "Pile of Leaves"
 Copyright (C) 2024 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64
-download R studio: 
+download R: 
 ```
 https://cran.r-project.org/
 ```
@@ -84,6 +86,12 @@ Run test.py
 
 
 # Demo
+Download Things in demo folder, and run demo.py cell by cell.
+
+
+
+
+
 Run Fig1~Fig4.py cells one by one, and the path should be replaced by requirements.
 
 The LAI data can download from: https://doi.org/10.5281/zenodo.7649107
