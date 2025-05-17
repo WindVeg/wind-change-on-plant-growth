@@ -375,7 +375,8 @@ merged.to_csv('path/LAIzone.txt', sep=' ',header=0, index=0)
 
 
 # In[]  Fig.4 Data generation process
-
+import os
+os.environ['R_HOME']=r'replace by your_R_home_path'
 import rpy2.robjects as robjects
 from rpy2.robjects.packages import importr
 import pandas as pd
