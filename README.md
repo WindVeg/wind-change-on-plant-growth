@@ -82,9 +82,22 @@ pip install rpy2
 ```
 After install relaimpo in R and conda install rpy2, you can import rpy2 in Spyder.
 The packages install in conda and R should finish in a few minutes.
-# Package tests
-Run test.py
 
+# Package tests
+In spyder, run the following orders:
+import numpy as np
+import pandas as pd
+import xarray as xr
+import matplotlib.pyplot as plt
+import pwlf
+import cartopy.crs as ccrs
+import geopandas as gpd
+import salem
+import rpy2.robjects as robjects
+import rioxarray
+import pytz
+
+if successfully run, then the packages are downloaded.
 
 # Demo
 Download Things in demo folder, change the path in the code to the path after downloading, and run demo.py cell by cell.
