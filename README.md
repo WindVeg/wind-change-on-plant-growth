@@ -100,9 +100,10 @@ import pytz
 if successfully run, then the packages are downloaded.
 
 # Demo
-1. Download Things in demo folder
-2. change the path in the code to the path after downloading
-3. Run demo.py cell by cell.
+1. Finish Installation Guide and  Package tests
+2. Download Things in demo folder
+3. change the path in the code to the path after downloading
+4. Run demo.py cell by cell.
 
 The whole demo will be finished in few minutes.
 
