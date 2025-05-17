@@ -85,6 +85,7 @@ The packages install in conda and R should finish in a few minutes.
 
 # Package tests
 In spyder, run the following orders:
+```
 import numpy as np
 import pandas as pd
 import xarray as xr
@@ -93,10 +94,12 @@ import pwlf
 import cartopy.crs as ccrs
 import geopandas as gpd
 import salem
+import os
+os.environ['R_HOME']=r'your path' #your path can get from R, using the following order:R.home()
 import rpy2.robjects as robjects
 import rioxarray
 import pytz
-
+```
 if successfully run, then the packages are downloaded.
 
 # Demo
