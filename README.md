@@ -56,7 +56,7 @@ conda install spyder
 ```
 spyder
 ```
-Then spyder should be open.
+After the order "spyder" in conda, spyder will be open.
 
 ### Package Installation
 Then make sure the following Python libraries are installed: numpy, pandas, xarray, matplotlib, pwlf, cartopy，rpy2, geopandas, salem, R package relaimpo. You can use the following order in your conda environment:
