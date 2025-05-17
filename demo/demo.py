@@ -474,13 +474,13 @@ for i in range(161):
          
 
 data_array = xr.DataArray(chucuntm*100, dims=['lat', 'lon'], coords={'lat': lat, 'lon': lon}, name='tm')
-data_array.to_netcdf('G:/GIMMS_LAI4g/china05/tm.nc') 
+data_array.to_netcdf('Your path.nc') 
 
 data_array = xr.DataArray(chucunpre*100, dims=['lat', 'lon'], coords={'lat': lat, 'lon': lon}, name='tm')
-data_array.to_netcdf('G:/GIMMS_LAI4g/china05/pre.nc') 
+data_array.to_netcdf('Your path.nc') 
 
 data_array = xr.DataArray(chucunwin*100, dims=['lat', 'lon'], coords={'lat': lat, 'lon': lon}, name='tm')
-data_array.to_netcdf('G:/GIMMS_LAI4g/china05/win.nc') 
+data_array.to_netcdf('Your path.nc') 
 
 data_array = xr.DataArray(chucunr2*100, dims=['lat', 'lon'], coords={'lat': lat, 'lon': lon}, name='tm')
-data_array.to_netcdf('G:/GIMMS_LAI4g/china05/r2.nc') 
+data_array.to_netcdf('Your path.nc') 
