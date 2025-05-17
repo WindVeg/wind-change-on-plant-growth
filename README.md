@@ -86,11 +86,11 @@ Run test.py
 
 
 # Demo
-Download Things in demo folder, and run demo.py cell by cell.
+Download Things in demo folder, change the path in the code to the path after downloading, and run demo.py cell by cell.
+The whole demo will be finished in few minutes.
+The Demo has demonstrated the usage of the relevant libraries and production of results. 
 
-
-
-
+# Reproducion
 
 Run Fig1~Fig4.py cells one by one, and the path should be replaced by requirements.
 
