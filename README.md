@@ -6,6 +6,7 @@ codes for "Decadal Wind Speed Recovery Amplifies Vegetation Growth"
 - [Installation Guide](#installation-guide)
 - [Package Tests](#package-tests)
 - [Demo](#demo)
+- [Reproduction](#reproduction)
 - [Data Verification](#data-verification)
 
 
@@ -90,7 +91,7 @@ Download Things in demo folder, change the path in the code to the path after do
 The whole demo will be finished in few minutes.
 The Demo has demonstrated the usage of the relevant libraries and production of results. 
 
-# Reproducion
+# Reproduction
 
 Run Fig1~Fig4.py cells one by one, and the path should be replaced by requirements.
 
