@@ -194,7 +194,8 @@ chucunqian=[]
 chucunqian_percent=[]
 chucunhou=[]
 chucunhou_percent=[]
-
+f1=f1.rio.write_crs("EPSG:4326")
+f2=f2.rio.write_crs("EPSG:4326")
 for idx, i in enumerate(unique_region_groups):
     gdf_VI = gdf[gdf['region_group'] == i]
     geometries_VI = gdf_VI.geometry.values  
